@@ -1,13 +1,6 @@
 import React from 'react';
-import React, { Component } from 'react';
 
-import EventCards from './containers/EventsCard'
-import TodosCards from './containers/TodosCard'
-
-// import { connect } from 'react-redux'
-// import {} from './redux/actionCreators'
-
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <>
@@ -17,5 +10,4 @@ class App extends Component {
   }
 }
 
-// export default connect(null, {})(App);
 export default App;
