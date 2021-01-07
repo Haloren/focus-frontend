@@ -1,13 +1,13 @@
 import React from 'react';
-import TodosForm from '../components/TodoForm'
-import Todos from '../components/Todos'
+import TodoForm from '../components/TodoForm';
+import Todos from '../components/Todos';
 
 class TodosContainer extends React.Component {
 
     render() {
         return(
             <>
-                <TodosForm />
+                <TodoForm />
                 <Todos />
             </>
         )
