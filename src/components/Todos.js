@@ -5,7 +5,7 @@ const Todos = (props) => {
 
     return (
         <>
-            <h1>To Do List</h1>
+            <li>To Dos will be listed here</li>
         </>
     )
 }

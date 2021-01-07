@@ -5,7 +5,8 @@ class EventForm extends React.Component {
     render() {
         return (
             <>
-                <h1>Add an Event</h1>
+                <h3>Add an Event</h3>
+                <input></input>
             </>
         )
     }

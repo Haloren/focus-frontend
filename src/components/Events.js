@@ -5,7 +5,7 @@ const Events = (props) => {
 
     return (
         <>
-            <h1>Events</h1>
+            <li>Events will be listed here</li>
         </>
     )
 }

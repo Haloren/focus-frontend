@@ -6,7 +6,8 @@ let dateToday = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
 const DateTime = () => {
     return (
         <>
-            <h1>{dateToday}</h1>
+            <h3>{dateToday}</h3>
+            <h1 id="clock"> 08:00 am</h1>
         </>
     )
 }

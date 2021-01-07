@@ -5,7 +5,8 @@ class TodoForm extends React.Component {
     render() {
         return (
             <>
-                <h1>Add a To Do</h1>
+                <h3>Add a To Do</h3>
+                <input></input>
             </>
         )
     }
