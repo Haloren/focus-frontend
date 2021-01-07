@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-let today = new Date();
-let dateToday = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-
+import DateTimeContainer from './containers/DateTimeContainer'
+import EventsContainer from './containers/EventsContainer'
+import TodosContainer from './containers/TodosContainer'
 
 class App extends React.Component {
   
@@ -15,8 +15,9 @@ class App extends React.Component {
     return (
       <>
         
-        <h1>{dateToday}</h1>
-
+        <DateTimeContainer />
+        <EventsContainer />
+        <TodosContainer />
 
         <footer><small> &copy;2021 Mostly Focused </small></footer>
       </>
