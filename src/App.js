@@ -7,11 +7,14 @@ let dateToday = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
 
 class App extends React.Component {
   
-  
+  componentDidMount() {
+
+  }
   
   render() {
     return (
       <>
+        
         <h1>{dateToday}</h1>
 
 
