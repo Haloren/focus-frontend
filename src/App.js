@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
+import UsersContainer from './containers/UsersContainer';
 import WeatherContainer from './containers/WeatherContainer';
 import DateTimeContainer from './containers/DateTimeContainer';
 import EventsContainer from './containers/EventsContainer';
 import TodosContainer from './containers/TodosContainer';
-
-import UsersContainer from './containers/UsersContainer';
 
 class App extends React.Component {
   

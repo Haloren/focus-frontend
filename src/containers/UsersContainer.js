@@ -23,4 +23,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {fetchUsers})(UsersContainer)
+export default connect(mapStateToProps, { fetchUsers })(UsersContainer)
