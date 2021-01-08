@@ -7,7 +7,6 @@ class TodoForm extends React.Component {
     render() {
         return (
             <>
-                <h3>Todo List</h3>
                 <form className="input-container" >
                     <input type="text" name="event" placeholder="Add a Todo" required ></input>
                     <input type="submit" value="Add"></input>

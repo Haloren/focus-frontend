@@ -49,10 +49,19 @@ body {
   left: 0;
 }
 
+.container-title {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  border-style: solid;
-  padding: 0px 10px 10px 10px;
-  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(1, 7, 41);
+  padding: 20px;
+  margin: 20px;
+  margin-top: 0;
   overflow: hidden;
 }
 
@@ -61,4 +70,26 @@ footer{
   bottom: 0;
   right: 0;
   margin: 10px;
+}
+
+@media (max-width: 600px)
+{
+  .date-time-container {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .left {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .right {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
