@@ -18,12 +18,8 @@ class App extends React.Component {
       <>
         
         <DateTimeContainer />
-        <div className="eventsContainer">
-          <EventsContainer />
-        </div>
-        <div className="todosContainer">
-          <TodosContainer />
-        </div>
+        <EventsContainer />
+        <TodosContainer />
 
         <footer><small> &copy;2021 Mostly Focused </small></footer>
       </>

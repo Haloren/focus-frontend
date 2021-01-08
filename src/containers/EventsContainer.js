@@ -6,10 +6,10 @@ class EventsContainer extends React.Component {
 
     render() {
         return(
-            <>
+            <div className="eventsContainer">
                 <EventForm />
                 <Events />
-            </>
+            </div>
         )
     }
 }
