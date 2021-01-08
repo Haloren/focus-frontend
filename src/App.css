@@ -10,16 +10,28 @@ body {
   background-image: url("./images/IMG_20181123_105826_022~2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(11, 23, 49);
 
   color: aliceblue;
 }
 
-.eventsContainer {
-  border-style: solid;
+.right {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
 }
 
-.todosContainer {
+.left {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+
+.container {
   border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
 }
 
 footer{

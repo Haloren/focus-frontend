@@ -6,9 +6,11 @@ class TodosContainer extends React.Component {
 
     render() {
         return(
-            <div className="todosContainer">
-                <TodoForm />
-                <Todos />
+            <div className="right">
+                <div className="container">
+                    <TodoForm />
+                    <Todos />
+                </div>
             </div>
         )
     }

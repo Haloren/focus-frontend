@@ -6,9 +6,11 @@ class EventsContainer extends React.Component {
 
     render() {
         return(
-            <div className="eventsContainer">
-                <EventForm />
-                <Events />
+            <div className="left">
+                <div className="container">
+                    <EventForm />
+                    <Events />
+                </div>
             </div>
         )
     }
