@@ -17,6 +17,8 @@ class App extends React.Component {
   render() {
     return (
       <>
+        <div className="background"></div>
+
         <WeatherContainer />
         <DateTimeContainer />
         <EventsContainer />

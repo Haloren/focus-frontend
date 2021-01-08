@@ -1,18 +1,25 @@
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-} */
+}
 
 body {
+  color: aliceblue;
+}
+
+.background {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
   background-image: url("./images/IMG_20181123_105826_022~2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(11, 23, 49);
-
-  color: aliceblue;
+  opacity: .96;
 }
 
 .weather-container {
