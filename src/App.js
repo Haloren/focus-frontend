@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { connect } from 'react-redux'
 
 import WeatherContainer from './containers/WeatherContainer'
 import DateTimeContainer from './containers/DateTimeContainer'
@@ -30,4 +31,12 @@ class App extends React.Component {
   }
 }
 
-export default App;
+// const mapStateToProps = (state) => {
+//   return {
+//     users: state.users
+//   }
+// }
+
+// export default (App);
+export default connect(null)(App);
+// export default connect(null, {mapDispatchToProps})(App);

@@ -1,9 +1,18 @@
 const API = "http://localhost:3001/"
 
+//FETCH DATA FROM DATABASE
+export function fetchUsers() {
+    return (dispatch) => {
+        fetch(API + '/users')
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+    }
+}
+
 //ADD DATA TO DATABASE
 export const addEvent = (event, userId) => {
     return (dispatch) => {
-        fetch(API + "/events", {
+        fetch(API + `users/${userId}/events`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -24,7 +33,7 @@ export const addEvent = (event, userId) => {
 
 export const addTodo = (todo, userId) => {
     return (dispatch) => {
-        fetch(API + "/todos", {
+        fetch(API + `users/${userId}todos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
