@@ -11,6 +11,16 @@ export function fetchUsers() {
         }))
     }
 }
+export function fetchTodos() {
+    return (dispatch) => {
+        fetch(API + '/users/1/todos')
+        .then(resp => resp.json())
+        .then(todos => dispatch({
+            type: 'FETCH_TODOS',
+            payload: todos
+        }))
+    }
+}
 
 //ADD DATA TO DATABASE
 export const addEvent = (event, userId) => {

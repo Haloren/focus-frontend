@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-import WeatherContainer from './containers/WeatherContainer'
-import DateTimeContainer from './containers/DateTimeContainer'
-import EventsContainer from './containers/EventsContainer'
-import TodosContainer from './containers/TodosContainer'
+import WeatherContainer from './containers/WeatherContainer';
+import DateTimeContainer from './containers/DateTimeContainer';
+import EventsContainer from './containers/EventsContainer';
+import TodosContainer from './containers/TodosContainer';
 
-import { fetchUsers } from './redux/actionCreators'
+import UsersContainer from './containers/UsersContainer';
 
 class App extends React.Component {
   
@@ -20,6 +20,7 @@ class App extends React.Component {
       <>
         <div className="background"></div>
 
+        <UsersContainer />
         <WeatherContainer />
         <DateTimeContainer />
         <EventsContainer />
@@ -35,7 +36,6 @@ class App extends React.Component {
 //     users: () => dispatch({type: "FETCH_USER"})
 // })
 
-// export default (App);
+export default (App);
 // export default connect(null)(App);
 // export default connect(null, mapDispatchToProps)(App);
-export default connect(null, { fetchUsers })(App);
