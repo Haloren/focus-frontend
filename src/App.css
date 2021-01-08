@@ -14,9 +14,13 @@ body {
   color: aliceblue;
 }
 
+.eventsContainer {
+  border-style: solid;
+}
 
-
-
+.todosContainer {
+  border-style: solid;
+}
 
 footer{
   position: absolute;
