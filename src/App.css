@@ -25,10 +25,14 @@ body {
 .weather-container {
   position: absolute;
   top: 5%;
-  right: 0;
-  padding: 0px 10px 10px 10px;
+  right: 5%;
+  padding: 10px;
   margin: 10px;
+  width: 166px;
 }
+  .zip-input {
+    width: 66px;
+  }
 
 .date-time-container {
   position: fixed;

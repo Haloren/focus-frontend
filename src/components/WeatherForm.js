@@ -8,7 +8,7 @@ class WeatherForm extends React.Component {
         return (
             <>
                 <form className="input-container">
-                    <input type="text" name="zip" placeholder="Zip Code" required ></input>
+                    <input type="text" name="zip" placeholder="Zip Code" className="zip-input" required ></input>
                     <input type="submit" value="Enter"></input>
                 </form>
             </>
