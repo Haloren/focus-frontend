@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import WeatherContainer from './containers/WeatherContainer'
 import DateTimeContainer from './containers/DateTimeContainer'
 import EventsContainer from './containers/EventsContainer'
 import TodosContainer from './containers/TodosContainer'
@@ -16,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        
+        <WeatherContainer />
         <DateTimeContainer />
         <EventsContainer />
         <TodosContainer />
