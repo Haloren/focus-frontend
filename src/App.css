@@ -30,6 +30,13 @@ body {
   margin: 10px;
 }
 
+.date-time-container {
+  position: fixed;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .right {
   position: absolute;
   bottom: 5%;
