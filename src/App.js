@@ -7,10 +7,12 @@ import DateTimeContainer from './containers/DateTimeContainer'
 import EventsContainer from './containers/EventsContainer'
 import TodosContainer from './containers/TodosContainer'
 
+import { fetchUsers } from './redux/actionCreators'
+
 class App extends React.Component {
   
   componentDidMount() {
-    
+    console.log(this.props)
   }
   
   render() {
@@ -29,12 +31,11 @@ class App extends React.Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     users: state.users
-//   }
-// }
+// const mapDispatchToProps = (dispatch) => ({
+//     users: () => dispatch({type: "FETCH_USER"})
+// })
 
 // export default (App);
-export default connect(null)(App);
-// export default connect(null, {mapDispatchToProps})(App);
+// export default connect(null)(App);
+// export default connect(null, mapDispatchToProps)(App);
+export default connect(null, { fetchUsers })(App);
