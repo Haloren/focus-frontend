@@ -1,12 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import {fetchUsers} from '../redux/actionCreators'
-
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.fetchUsers()
+
     }
 
     render() {
@@ -23,4 +21,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { fetchUsers })(UsersContainer)
+export default connect(mapStateToProps)(UsersContainer)

@@ -1,26 +1,36 @@
 const API = "http://localhost:3001/"
 
-//FETCH DATA FROM DATABASE
-// export function fetchUsers() {
-//     return (dispatch) => {
-//         fetch(API + '/users')
-//         .then(resp => resp.json())
-//         .then(users => dispatch({
-//             type: 'FETCH_USERS',
-//             payload: users
-//         }))
-//     }
-// }
-// export function fetchTodos() {
-//     return (dispatch) => {
-//         fetch(API + '/users/1/todos')
-//         .then(resp => resp.json())
-//         .then(todos => dispatch({
-//             type: 'FETCH_TODOS',
-//             payload: todos
-//         }))
-//     }
-// }
+// FETCH DATA FROM DATABASE
+export function fetchUsers() {
+    return (dispatch) => {
+        fetch(API + '/users')
+        .then(resp => resp.json())
+        .then(users => dispatch({
+            type: 'FETCH_USERS',
+            payload: users
+        }))
+    }
+}
+export function fetchTodos() {
+    return (dispatch) => {
+        fetch(API + '/users/1/todos')
+        .then(resp => resp.json())
+        .then(todos => dispatch({
+            type: 'FETCH_TODOS',
+            payload: todos
+        }))
+    }
+}
+export function fetchEvents() {
+    return(dispatch) => {
+        fetch(API + '/users/1/events')
+        .then(resp => resp.json())
+        .then(events => dispatch({
+            type: 'FETCH_EVENTS',
+            payload: events
+        }))
+    }
+}
 
 //ADD DATA TO DATABASE
 export const addEvent = (event, userId) => {
