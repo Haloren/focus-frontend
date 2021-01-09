@@ -31,6 +31,16 @@ export function fetchEvents() {
         }))
     }
 }
+export function fetchWeathers() {
+    return(dispatch) => {
+        fetch(API + '/users/1/weathers/1')
+        .then(resp => resp.json())
+        .then(weathers => dispatch({
+            type: 'FETCH_WEATHERS',
+            payload: weathers
+        }))
+    }
+}
 
 //ADD DATA TO DATABASE
 export const addEvent = (event, userId) => {
