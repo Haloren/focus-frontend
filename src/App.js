@@ -11,30 +11,24 @@ import TodosContainer from './containers/TodosContainer';
 class App extends React.Component {
   
   componentDidMount() {
-    console.log(this.props)
+    console.log(this)
   }
   
   render() {
     return (
       <>
         <div className="background"></div>
-
+        
         <UsersContainer />
         <WeatherContainer />
         <DateTimeContainer />
         <EventsContainer />
         <TodosContainer />
-
+          
         <footer><small> &copy;2021 Mostly Focused </small></footer>
       </>
     );
   }
 }
 
-// const mapDispatchToProps = (dispatch) => ({
-//     users: () => dispatch({type: "FETCH_USER"})
-// })
-
 export default (App);
-// export default connect(null)(App);
-// export default connect(null, mapDispatchToProps)(App);
