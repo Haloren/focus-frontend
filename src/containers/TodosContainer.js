@@ -1,4 +1,5 @@
 import React from 'react';
+
 import TodoForm from '../components/TodoForm';
 import Todos from '../components/Todos';
 
@@ -9,12 +10,12 @@ class TodosContainer extends React.Component {
             <div className="right">
                 <h3 className="container-title">Todo List</h3>
                 <div className="container">
-                    <TodoForm user={this.props.user} />
-                    <Todos todos={this.props.user && this.props.user.todos} />
+                    <TodoForm />
+                    <Todos />
                 </div>
             </div>
         )
     }
 }
 
-export default TodosContainer
+export default (TodosContainer);

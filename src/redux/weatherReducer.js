@@ -4,8 +4,6 @@ const initialWeatherState = {
 
 const weathersReducer = (state = initialWeatherState, action) => {
     switch (action.type){
-        case 'FETCH_WEATHERS':
-            return {...state, weathers: action.payload}
 
         default: 
             return {...state}

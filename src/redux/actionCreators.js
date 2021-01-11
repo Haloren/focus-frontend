@@ -5,39 +5,10 @@ export function fetchUsers() {
     return (dispatch) => {
         fetch(API + '/users')
         .then(resp => resp.json())
+        // .then(data => console.log(data))
         .then(users => dispatch({
             type: 'FETCH_USERS',
             payload: users
-        }))
-    }
-}
-export function fetchTodos() {
-    return (dispatch) => {
-        fetch(API + '/users/1/todos')
-        .then(resp => resp.json())
-        .then(todos => dispatch({
-            type: 'FETCH_TODOS',
-            payload: todos
-        }))
-    }
-}
-export function fetchEvents() {
-    return(dispatch) => {
-        fetch(API + '/users/1/events')
-        .then(resp => resp.json())
-        .then(events => dispatch({
-            type: 'FETCH_EVENTS',
-            payload: events
-        }))
-    }
-}
-export function fetchWeathers() {
-    return(dispatch) => {
-        fetch(API + '/users/1/weathers/1')
-        .then(resp => resp.json())
-        .then(weathers => dispatch({
-            type: 'FETCH_WEATHERS',
-            payload: weathers
         }))
     }
 }

@@ -8,7 +8,6 @@ const DateTime = () => {
         <>
             <h3>{dateToday}</h3>
             <h1 id="clock"> 08:00 am</h1>
-            <h2> Hello User Name</h2>
         </>
     )
 }

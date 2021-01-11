@@ -2,7 +2,7 @@ import React from 'react';
 
 class TodoForm extends React.Component {
 
-    state = { }
+    state = { item: ''}
 
     render() {
         return (

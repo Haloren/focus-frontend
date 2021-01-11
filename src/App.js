@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+
 // import { connect } from 'react-redux';
+// import { fetchUsers } from './redux/actionCreators'
 
 import UsersContainer from './containers/UsersContainer';
 import WeatherContainer from './containers/WeatherContainer';
@@ -11,9 +13,10 @@ import TodosContainer from './containers/TodosContainer';
 class App extends React.Component {
   
   componentDidMount() {
-    fetch('http://localhost:3001/users')
-    .then(resp => resp.json())
-    .then(data => console.log(data))
+    // fetch('http://localhost:3001/users')
+    // .then(resp => resp.json())
+    // .then(data => console.log(data))
+
   }
   
   render() {
@@ -33,4 +36,6 @@ class App extends React.Component {
   }
 }
 
+
 export default (App);
+// export default connect(null, { fetchUsers })(App);

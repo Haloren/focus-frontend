@@ -2,7 +2,7 @@ import React from 'react';
 
 class EventForm extends React.Component {
 
-    state = { }
+    state = { title: '', date: ''}
 
     render() {
         return (
