@@ -13,7 +13,7 @@ const Users = (props) => {
 
     return (
         <>
-            {/* <h2> Hello {props.users[0].name}</h2> */}
+            {/* <h2> Hello {props.users.users[0].name}</h2> */}
             <TodosContainer />
             <EventsContainer />
             <WeatherContainer />

@@ -19,7 +19,7 @@ class UsersContainer extends React.Component {
             <>
             <Switch>
                 <Route exact path='/new' component={ UserForm }></Route>
-                <Route path='/' render={(routerProps) => <Users {...routerProps} users={this.props.users} />}></Route>
+                <Route path='/users/:id' render={(routerProps) => <Users {...routerProps} users={this.props.users} />}></Route>
                 {/* <Users users={this.props.users}/> */}
             </Switch>
             </>
