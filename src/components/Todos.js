@@ -5,7 +5,13 @@ const Todos = (props) => {
 
     return (
         <>
-            <li>To Dos will be listed here</li>
+            <ul>
+                <li className="list-container">
+                    <input className="list-item" type="checkbox"></input>
+                    <h3 className="list-item">Todo will be listed here</h3>
+                    <button className="list-item">X</button>
+                </li>
+            </ul>
         </>
     )
 }
