@@ -10,10 +10,15 @@ class WeatherForm extends React.Component {
         })
     }
 
+    handleOnSubmit = (e) => {
+        e.preventDefault()
+        
+    } 
+
     render() {
         return (
             <>
-                <form className="input-container">
+                <form className="input-container" onSubmit={this.handleOnSubmit}>
                     <input type="text" name="zip" value={this.state.zip} onChange={this.handleOnChange} placeholder="Zip Code" className="zip-input" required ></input>
                     <input type="submit" value="Enter"></input>
                 </form>
