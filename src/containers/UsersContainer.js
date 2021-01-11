@@ -3,7 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { fetchUsers } from '../redux/actionCreators';
 
-import User from '../components/User';
+import Users from '../components/Users';
 
 class UsersContainer extends React.Component {
 
@@ -15,7 +15,7 @@ class UsersContainer extends React.Component {
     render() {
         return (
             <>
-                <User users={this.props.users}/>
+                <Users users={this.props.users.users}/>
             </>
         )
     }
