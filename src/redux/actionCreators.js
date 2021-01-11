@@ -28,7 +28,7 @@ export const addUser = (user) => {
         })
         .then(resp => resp.json())
         .then(user => {
-            debugger;
+            // debugger;
             if (user.message) {
                 alert(user.message)
             } else {
