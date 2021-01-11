@@ -13,8 +13,8 @@ class EventForm extends React.Component {
         })
     }
 
-    handleOnSubmit = (e) => {
-        e.preventDefault()
+    handleOnSubmit = (event) => {
+        event.preventDefault()
         
     }
 
