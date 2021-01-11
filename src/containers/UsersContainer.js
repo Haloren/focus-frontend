@@ -3,6 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { fetchUsers } from '../redux/actionCreators';
 
+// import UserForm from '../components/UserForm';
 import Users from '../components/Users';
 
 class UsersContainer extends React.Component {
@@ -15,6 +16,7 @@ class UsersContainer extends React.Component {
     render() {
         return (
             <>
+                {/* <UserForm /> */}
                 <Users users={this.props.users.users}/>
             </>
         )

@@ -4,12 +4,21 @@ class EventForm extends React.Component {
 
     state = { title: '', date: ''}
 
+    handleOnChange = (event) => {
+        // debugger;
+        this.setState({
+            // title: event.target.value
+            // date: event.target.date
+            [event.target.name]: event.target.value
+        })
+    }
+
     render() {
         return (
             <>
                 <form className="input-container" >
-                    <input type="text" name="event" placeholder="Add an Event (ex: Birth Anniversary)" required ></input>
-                    <input type="date" name="date" required ></input>
+                    <input type="text" name="title" value={this.state.title} onChange={this.handleOnChange} placeholder="Add an Event (ex: Birth Anniversary)" required ></input>
+                    <input type="date" name="date" value={this.state.date} onChange={this.handleOnChange} required ></input>
                     <input type="submit" value="Add Event"></input>
                 </form>
             </>
