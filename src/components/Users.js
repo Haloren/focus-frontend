@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import EventsContainer from '../containers/EventsContainer';
 import TodosContainer from '../containers/TodosContainer';
@@ -13,7 +14,7 @@ const Users = (props) => {
 
     return (
         <>
-            <h2> Hello {user ? user.name : null}</h2>
+            <h2> Hello {user ? user.name : <Link to={'/new'}>Please Login</Link>}</h2>
             <TodosContainer user={user} />
             <EventsContainer />
             <WeatherContainer />
