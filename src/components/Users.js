@@ -7,14 +7,14 @@ import WeatherContainer from '../containers/WeatherContainer';
 
 const Users = (props) => {
 
-    console.log(props.users.users)
+    // console.log(props.users.users)
     
-    // let userName = props.users.users[props.match.params.id - 1].name
+    let user = props.users.users[props.match.params.id - 1]
 
     return (
         <>
-            {/* <h2> Hello {props.users.users[0].name}</h2> */}
-            <TodosContainer />
+            <h2> Hello {user ? user.name : null}</h2>
+            <TodosContainer user={user} />
             <EventsContainer />
             <WeatherContainer />
         </>
