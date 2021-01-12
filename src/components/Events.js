@@ -7,7 +7,7 @@ const Events = (props) => {
         <ul>
             {props.events && props.events.map(event =>
                 <li key={event.id} className="list-container">
-                    <h3 className="list-item">{event.title} - {event.date}</h3>
+                    <h4 className="list-item">{event.title} - {event.date}</h4>
                     <button className="list-item">X</button>
                 </li>
             )}

@@ -9,7 +9,7 @@ class TodosContainer extends React.Component {
             <div className="right">
                 <h3 className="container-title">Todo List</h3>
                 <div className="container">
-                    <TodoForm user={this.props.user}/>
+                    <TodoForm />
                     <Todos todos={this.props.user && this.props.user.todos} />
                 </div>
             </div>

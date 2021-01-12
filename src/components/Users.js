@@ -17,7 +17,7 @@ const Users = (props) => {
             <h2> Hello {user ? user.name : <Link to={'/new'}>Please Login</Link>}</h2>
             <TodosContainer user={user} />
             <EventsContainer user={user}/>
-            <WeatherContainer />
+            <WeatherContainer user={user}/>
         </>
     )
 }
