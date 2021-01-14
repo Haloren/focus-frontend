@@ -24,10 +24,10 @@ class App extends React.Component {
         <div className="background"></div>
         
         <UsersContainer />
-        <WeatherContainer />
+        {/* <WeatherContainer />
         <DateTimeContainer />
         <EventsContainer />
-        <TodosContainer />
+        <TodosContainer /> */}
           
         <footer><small> &copy;2021 Mostly Focused </small></footer>
       </>

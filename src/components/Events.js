@@ -4,6 +4,8 @@ const Events = (props) => {
     // console.log("Events", props.events)
 
     return (
+        <>
+        <h3 className="container-title">Up Coming Events</h3>
         <ul>
             {props.events && props.events.map(event =>
                 <li key={event.id} className="list-container">
@@ -12,6 +14,7 @@ const Events = (props) => {
                 </li>
             )}
         </ul>
+        </>
     )
 }
 

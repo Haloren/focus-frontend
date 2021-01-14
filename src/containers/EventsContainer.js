@@ -6,7 +6,6 @@ class EventsContainer extends React.Component {
     render() {
         return(
             <div className="left">
-                <h3 className="container-title">Up Coming Events</h3>
                 <div className="container">
                     <div>
                         <EventForm />

@@ -4,6 +4,8 @@ const Todos = (props) => {
     // console.log("Todos", props.todos)
 
     return (
+        <>
+        <h3 className="container-title">Todo List</h3>
         <ul>
             {props.todos && props.todos.map(todo =>
                 <li key={todo.id} className="list-container">
@@ -13,6 +15,7 @@ const Todos = (props) => {
                 </li>
             )}
         </ul>
+        </>
     )
 }
 

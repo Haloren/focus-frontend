@@ -10,7 +10,7 @@ const Users = (props) => {
 
     // console.log(props.users.users)
     
-    let user = props.users.users[props.match.params.id - 1]
+    let user = props.users.users.filter(user => user.id == props.match.params.id)[0]
 
     return (
         <>
