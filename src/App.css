@@ -67,16 +67,22 @@ body {
   margin: 20px;
   margin-top: 0;
   overflow: hidden;
+  height: 250px;
 }
 
 .list-container {
   list-style: none;
+  padding: 5px;
 }
 
-.list-item {
-  display: inline-block;
-  margin: 5px;
+.checkbox {
   padding: 5px;
+  margin: 0px 10px;
+}
+
+.delete-btn {
+  padding: 5px;
+  margin: 0px 10px;
 }
 
 footer{
@@ -96,7 +102,7 @@ footer{
   }
   .left {
     position: fixed;
-    top: 78%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

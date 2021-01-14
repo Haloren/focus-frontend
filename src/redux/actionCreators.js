@@ -50,8 +50,8 @@ export const addTodo = (todo, userId) => {
         })
         .then(resp => resp.json())
         .then(user => {
-            if (todo.message) {
-                alert(todo.message)
+            if (user.message) {
+                alert(user.message)
             } else {
                 dispatch({type: 'ADD_TODO', payload: user})
             }
@@ -69,15 +69,17 @@ export const addEvent = (event, userId) => {
             body: JSON.stringify(event),
         })
         .then(resp => resp.json())
-        .then(event => {
-            if (event.message) {
-                alert(event.message)
+        .then(user => {
+            if (user.message) {
+                alert(user.message)
             } else {
-                dispatch({type: 'ADD_EVENT', payload: event})
+                dispatch({type: 'ADD_EVENT', payload: user})
             }
         })
     }
 }
+
+// UPDATE DATA IN DATABASE
 export const updateZip = (zip, userId, weatherId) => {
     return (dispatch) => {
         fetch(API + `/users/${userId}/weathers/${weatherId}`, {
@@ -89,14 +91,30 @@ export const updateZip = (zip, userId, weatherId) => {
             body: JSON.stringify(zip),
         })
         .then(resp => resp.json())
-        .then(zip => {
-            if (zip.message) {
+        .then(user => {
+            if (user.message) {
                 alert(zip.message)
             } else {
-                dispatch({type: 'UPDATE_ZIP', payload: zip})
+                dispatch({type: 'UPDATE_ZIP', payload: user})
             }
         })
     }
 }
 
 // DELETE DATA FROM DATABASE
+export const deleteTodo = (todoId, userId) => {
+    return (dispatch) => {
+        fetch(API + `/users/${userId}/todos/${todoId}`, {
+            method: 'DELETE',
+            },
+        )
+        .then(resp => resp.json())
+        .then(user => {
+            if (user.message) {
+                alert(user.message)
+            } else {
+                dispatch({type: 'DELETE_TODO', payload: user})
+            }
+        })
+    }
+}
