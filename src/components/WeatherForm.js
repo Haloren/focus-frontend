@@ -13,6 +13,7 @@ class WeatherForm extends React.Component {
     handleOnSubmit = (event) => {
         event.preventDefault()
         
+        // this.setState({ zip: '' });
     } 
 
     render() {

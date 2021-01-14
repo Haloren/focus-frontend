@@ -4,11 +4,11 @@ import './App.css';
 // import { connect } from 'react-redux';
 // import { fetchUsers } from './redux/actionCreators'
 
-import UsersContainer from './containers/UsersContainer';
-import WeatherContainer from './containers/WeatherContainer';
 import DateTimeContainer from './containers/DateTimeContainer';
-import EventsContainer from './containers/EventsContainer';
-import TodosContainer from './containers/TodosContainer';
+import UsersContainer from './containers/UsersContainer';
+// import WeatherContainer from './containers/WeatherContainer';
+// import EventsContainer from './containers/EventsContainer';
+// import TodosContainer from './containers/TodosContainer';
 
 class App extends React.Component {
   
@@ -23,9 +23,9 @@ class App extends React.Component {
       <>
         <div className="background"></div>
         
+        <DateTimeContainer />
         <UsersContainer />
         {/* <WeatherContainer />
-        <DateTimeContainer />
         <EventsContainer />
         <TodosContainer /> */}
           

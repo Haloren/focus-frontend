@@ -38,26 +38,26 @@ export const addUser = (user) => {
 
     }
 }
-// export const addTodo = (todo, userId) => {
-//     return (dispatch) => {
-//         fetch(API + `users/${userId}/todos`, {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Accept': 'application/json'
-//             },
-//             body: JSON.stringify(todo),
-//         })
-//         .then(resp => resp.json())
-//         .then(todo => {
-//             if (todo.message) {
-//                 alert(todo.message)
-//             } else {
-//                 dispatch({type: 'ADD_TODO', payload: todo})
-//             }
-//         })
-//     }
-// }
+export const addTodo = (todo, userId) => {
+    return (dispatch) => {
+        fetch(API + `users/${userId}/todos`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(todo),
+        })
+        .then(resp => resp.json())
+        .then(todo => {
+            if (todo.message) {
+                alert(todo.message)
+            } else {
+                dispatch({type: 'ADD_TODO', payload: todo})
+            }
+        })
+    }
+}
 // export const addEvent = (event, userId) => {
 //     return (dispatch) => {
 //         fetch(API + `users/${userId}/events`, {

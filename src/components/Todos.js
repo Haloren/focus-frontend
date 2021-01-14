@@ -5,7 +5,6 @@ const Todos = (props) => {
 
     return (
         <>
-        <h3 className="container-title">Todo List</h3>
         <ul>
             {props.todos && props.todos.map(todo =>
                 <li key={todo.id} className="list-container">

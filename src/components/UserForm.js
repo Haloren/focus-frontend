@@ -21,6 +21,7 @@ class UserForm extends React.Component {
     render() {
         return (
         <>
+            <h1>Create an Account</h1>
             <form onSubmit={this.handleOnSubmit}>
                 <input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.handleOnChange} required></input>
                 <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleOnChange} required></input>

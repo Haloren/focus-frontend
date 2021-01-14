@@ -8,9 +8,9 @@ import WeatherContainer from '../containers/WeatherContainer';
 
 const Users = (props) => {
 
-    // console.log(props.users.users)
+    // console.log(props.users)
     
-    let user = props.users.users.filter(user => user.id == props.match.params.id)[0]
+    let user = props.users.filter(user => user.id == props.match.params.id)[0]
 
     return (
         <>
