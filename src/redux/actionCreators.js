@@ -14,7 +14,7 @@ export function fetchUsers() {
     }
 }
 
-//ADD DATA TO DATABASE
+// ADD DATA TO DATABASE
 export const addUser = (user) => {
     // debugger;
     return (dispatch) => {

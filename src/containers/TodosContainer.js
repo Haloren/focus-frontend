@@ -6,7 +6,7 @@ import Todos from '../components/Todos';
 class TodosContainer extends React.Component {
     render() {
         return(
-            <div className="right">
+            <div className="todos">
                 <h3 className="container-title">Todo List</h3>
                 <div className="container">
                     <TodoForm user={this.props.user} />

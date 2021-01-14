@@ -22,6 +22,18 @@ body {
   opacity: .96;
 }
 
+.login-btn {
+  position: absolute;
+  top: 5%;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5%;
+  padding: 5px;
+  color: #000;
+}
+
 .weather-container {
   position: absolute;
   top: 5%;
@@ -36,18 +48,26 @@ body {
 
 .date-time-container {
   position: fixed;
-  top: 34%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.date {
+  text-align: center;
+}
+.clock {
+  font-size: 5em;
+  margin: 5px;
+  padding: 5px;
+}
 
-.right {
+.todos {
   position: absolute;
   bottom: 5%;
   right: 0;
 }
 
-.left {
+.events {
   position: absolute;
   bottom: 5%;
   left: 0;
@@ -95,19 +115,29 @@ footer{
 
 @media (max-width: 650px)
 {
+  .login-btn {
+    position: fixed;
+    top: 1%;
+    margin: 0;
+  }
   .date-time-container {
     position: fixed;
     top: 10%;
     left: 25%;
     transform: translate(-50%, -50%);
   }
-  .left {
+
+  .clock {
+    font-size: 2em;
+  }
+
+  .events {
     position: fixed;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .right {
+  .todos {
     position: fixed;
     top: 50%;
     left: 50%;

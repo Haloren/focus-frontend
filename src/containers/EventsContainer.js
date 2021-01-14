@@ -5,7 +5,7 @@ import Events from '../components/Events';
 class EventsContainer extends React.Component {
     render() {
         return(
-            <div className="left">
+            <div className="events">
                 <h3 className="container-title">Up Coming Events</h3>
                 <div className="container">
                     <div>
