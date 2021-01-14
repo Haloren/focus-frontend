@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherForm from '../components/WeatherForm'
+import WeatherUpdate from '../components/WeatherUpdate'
 import Weather from '../components/Weather'
 
 class WeatherContainer extends React.Component {
@@ -8,7 +8,7 @@ class WeatherContainer extends React.Component {
         return(
             <div className="weather-container">
                 <div>
-                    <WeatherForm user={this.props.user} />
+                    <WeatherUpdate user={this.props.user} />
                 </div>
                 <Weather weather={this.props.user && this.props.user.weather}/>
             </div>

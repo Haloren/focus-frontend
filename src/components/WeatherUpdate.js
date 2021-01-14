@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { updateZip } from '../redux/actionCreators';
 
-class WeatherForm extends React.Component {
+class WeatherUpdate extends React.Component {
 
     state = { zip: '' }
 
@@ -14,7 +14,8 @@ class WeatherForm extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault()
-        // this.props.updateZip(this.state, this.props.user.id, this.props.weather.id)
+        // debugger;
+        this.props.updateZip(this.state, this.props.user.id, this.props.user.weather.id)
         this.setState({ zip: '' });
     } 
 
@@ -23,11 +24,11 @@ class WeatherForm extends React.Component {
             <>
                 <form className="input-container" onSubmit={this.handleOnSubmit}>
                     <input type="text" name="zip" value={this.state.zip} onChange={this.handleOnChange} placeholder="Zip Code" className="zip-input" required ></input>
-                    <input type="submit" value="Enter"></input>
+                    <input type="submit" value="Change"></input>
                 </form>
             </>
         )
     }
 }
 
-export default connect(null, { updateZip })(WeatherForm)
+export default connect(null, { updateZip })(WeatherUpdate)

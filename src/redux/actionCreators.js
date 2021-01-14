@@ -81,6 +81,7 @@ export const addEvent = (event, userId) => {
 
 // UPDATE DATA IN DATABASE
 export const updateZip = (zip, userId, weatherId) => {
+    // debugger;
     return (dispatch) => {
         fetch(API + `/users/${userId}/weathers/${weatherId}`, {
             method: 'PATCH',
