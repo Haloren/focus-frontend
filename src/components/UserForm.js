@@ -26,6 +26,7 @@ class UserForm extends React.Component {
                 <input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.handleOnChange} required></input>
                 <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleOnChange} required></input>
                 <input type="password" name="password_digest" placeholder="password" value={this.state.password_digest} onChange={this.handleOnChange} required></input>
+                {/* <input type="number" name="zip"></input> */}
                 <input type="submit" value="Create Account"></input>
             </form>
         </>
