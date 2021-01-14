@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Events = (props) => {
-    console.log("Events", props.events)
+    // console.log("Events", props.events)
 
     return (
         <ul>

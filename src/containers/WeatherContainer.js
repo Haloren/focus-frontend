@@ -7,7 +7,9 @@ class WeatherContainer extends React.Component {
     render() {
         return(
             <div className="weather-container">
-                <WeatherForm />
+                <div>
+                    <WeatherForm />
+                </div>
                 <Weather weather={this.props.user && this.props.user.weather}/>
             </div>
         )

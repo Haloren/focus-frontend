@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Todos = (props) => {
-    console.log("Todos", props.todos)
+    // console.log("Todos", props.todos)
 
     return (
         <ul>

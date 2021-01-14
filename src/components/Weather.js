@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Weather = (props) => {
-    console.log("Weather", props.weather)
+    // console.log("Weather", props.weather)
 
     return (
         <>  

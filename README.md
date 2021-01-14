@@ -1,3 +1,6 @@
+# Before you start:
+Start the backend API located at [Focus-backend](https://github.com/Haloren/focus-backend)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
