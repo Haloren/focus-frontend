@@ -58,45 +58,45 @@ export const addTodo = (todo, userId) => {
         })
     }
 }
-// export const addEvent = (event, userId) => {
-//     return (dispatch) => {
-//         fetch(API + `/users/${userId}/events`, {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Accept': 'application/json'
-//             },
-//             body: JSON.stringify(event),
-//         })
-//         .then(resp => resp.json())
-//         .then(event => {
-//             if (event.message) {
-//                 alert(event.message)
-//             } else {
-//                 dispatch({type: 'ADD_EVENT', payload: event})
-//             }
-//         })
-//     }
-// }
-// export const addZip = (zip, userId, weatherId) => {
-//     return (dispatch) => {
-//         fetch(API + `/users/${userId}/weathers/${weatherId}`, {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Accept': 'application/json'
-//             },
-//             body: JSON.stringify(zip),
-//         })
-//         .then(resp => resp.json())
-//         .then(zip => {
-//             if (zip.message) {
-//                 alert(zip.message)
-//             } else {
-//                 dispatch({type: 'ADD_ZIP', payload: zip})
-//             }
-//         })
-//     }
-// }
+export const addEvent = (event, userId) => {
+    return (dispatch) => {
+        fetch(API + `/users/${userId}/events`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(event),
+        })
+        .then(resp => resp.json())
+        .then(event => {
+            if (event.message) {
+                alert(event.message)
+            } else {
+                dispatch({type: 'ADD_EVENT', payload: event})
+            }
+        })
+    }
+}
+export const updateZip = (zip, userId, weatherId) => {
+    return (dispatch) => {
+        fetch(API + `/users/${userId}/weathers/${weatherId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(zip),
+        })
+        .then(resp => resp.json())
+        .then(zip => {
+            if (zip.message) {
+                alert(zip.message)
+            } else {
+                dispatch({type: 'UPDATE_ZIP', payload: zip})
+            }
+        })
+    }
+}
 
 // DELETE DATA FROM DATABASE

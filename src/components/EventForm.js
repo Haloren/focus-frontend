@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { addEvent } from '../redux/actionCreators';
 
 class EventForm extends React.Component {
 
@@ -15,8 +17,8 @@ class EventForm extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault()
-     
-        // this.setState({ title: '', date: ''})
+        this.props.addEvent(this.state, this.props.user.id)
+        this.setState({ title: '', date: ''});
     }
 
     render() {
@@ -32,4 +34,4 @@ class EventForm extends React.Component {
     }
 }
 
-export default (EventForm)
+export default connect(null, { addEvent })(EventForm)

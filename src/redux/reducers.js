@@ -13,14 +13,28 @@ const reducers = (state=initialUserState, action) => {
 
         case 'ADD_TODO':
             // debugger;
-            let matchUserId = state.users.map(user => {
+            let userTodoAdd = state.users.map(user => {
                 if (user.id === action.payload.id) {
                     return action.payload
                 } else {
                     return user
                 }
             })
-            return {...state, users: matchUserId}
+            return {...state, users: userTodoAdd}
+
+        case 'ADD_EVENT':
+            let userEventAdd = state.users.map(user => {
+                if (user.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return user
+                }
+            })
+            return {...state, users: userEventAdd}
+
+        case 'UPDATE_ZIP':
+            debugger;
+            return {}
 
         default:
             return {...state}
