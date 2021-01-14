@@ -16,7 +16,7 @@ class TodoForm extends React.Component {
     handleOnSubmit = (event) => {
         event.preventDefault()
         // debugger;
-        addTodo(this.state, this.props.user.id)
+        this.props.addTodo(this.state, this.props.user.id)
         this.setState({ item: ''});
     }
 
@@ -33,4 +33,4 @@ class TodoForm extends React.Component {
     }
 }
 
-export default connect(null)(TodoForm)
+export default connect(null, { addTodo })(TodoForm)

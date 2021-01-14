@@ -40,7 +40,7 @@ export const addUser = (user) => {
 }
 export const addTodo = (todo, userId) => {
     return (dispatch) => {
-        fetch(API + `users/${userId}/todos`, {
+        fetch(API + `/users/${userId}/todos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,18 +49,18 @@ export const addTodo = (todo, userId) => {
             body: JSON.stringify(todo),
         })
         .then(resp => resp.json())
-        .then(todo => {
+        .then(user => {
             if (todo.message) {
                 alert(todo.message)
             } else {
-                dispatch({type: 'ADD_TODO', payload: todo})
+                dispatch({type: 'ADD_TODO', payload: user})
             }
         })
     }
 }
 // export const addEvent = (event, userId) => {
 //     return (dispatch) => {
-//         fetch(API + `users/${userId}/events`, {
+//         fetch(API + `/users/${userId}/events`, {
 //             method: 'POST',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export const addTodo = (todo, userId) => {
 // }
 // export const addZip = (zip, userId, weatherId) => {
 //     return (dispatch) => {
-//         fetch(API + `users/${userId}/weathers/${weatherId}`, {
+//         fetch(API + `/users/${userId}/weathers/${weatherId}`, {
 //             method: 'POST',
 //             headers: {
 //                 'Content-Type': 'application/json',
