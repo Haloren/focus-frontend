@@ -23,6 +23,13 @@ body {
   opacity: .96;
 }
 
+.hello-user {
+  position: absolute;
+  top: 5%;
+  margin: 0 5%;
+  padding: 5px;
+}
+
 .login-btn {
   position: absolute;
   top: 5%;
@@ -52,10 +59,9 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.date {
   text-align: center;
 }
+
 .clock {
   font-size: 5em;
   margin: 5px;

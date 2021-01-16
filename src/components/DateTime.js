@@ -12,12 +12,12 @@ const DateTime = () => {
     let year = today.getFullYear();
 
     return (
-        <>
-            <h3 className="date">{day} {month} {date}, {year}</h3>
-            <div>   
+        <div className="date-time-container">
+            <h3>{day} {month} {date}, {year}</h3>
+            <div className="clock">   
                 <Clock />
             </div>
-        </>
+        </div>
     )
 }
 
