@@ -6,6 +6,7 @@ import { fetchUsers } from '../redux/actionCreators';
 
 import Users from '../components/Users';
 import UserForm from '../components/UserForm';
+import DateTime from '../components/DateTime';
 
 class UsersContainer extends React.Component {
 
@@ -22,7 +23,7 @@ class UsersContainer extends React.Component {
                 <Route path='/users/:id' render={(routerProps) => <Users {...routerProps} users={this.props.users} />}></Route>
                 {/* <Users users={this.props.users}/> */}
 
-                <Route exact path='/' component={ UserForm }></Route>
+                <Route exact path='/' componet={ DateTime }></Route>
             </Switch>
             </>
         )
