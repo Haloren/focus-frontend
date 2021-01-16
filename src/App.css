@@ -1,13 +1,21 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* COLOR PALETTE */
+:root {
+    --wh: #ebebeb;
+    --blk: #030b38;
+}
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   color: aliceblue;
+  text-shadow: 1px 1px rgb(70, 70, 70);
 }
 
 .background {
@@ -50,9 +58,9 @@ body {
   margin: 10px;
   width: 166px;
 }
-  .zip-input {
-    width: 66px;
-  }
+.zip-input {
+  width: 66px;
+}
 
 .date-time-container {
   position: fixed;
@@ -61,11 +69,14 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.date {
+  font-size: 1.5em;
+}
 .clock {
   font-size: 5em;
   margin: 5px;
   padding: 5px;
+  font-weight: bolder;
 }
 
 .todos {
@@ -85,9 +96,9 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  text-shadow: 2px 2px black;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
-
 .container {
   border-radius: 6px;
   background-color: rgb(1, 0, 22);
@@ -97,17 +108,14 @@ body {
   overflow: hidden;
   height: 250px;
 }
-
 .list-container {
   list-style: none;
   padding: 5px;
 }
-
 .checkbox {
   padding: 5px;
   margin: 0px 10px;
 }
-
 .delete-btn {
   padding: 5px;
   margin: 0px 10px;
