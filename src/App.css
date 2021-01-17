@@ -5,6 +5,7 @@
     --wh: rgb(235, 235, 235);
     --blk: rgb(3, 11, 56);
     --gry: rgb(70, 70, 70);
+    --bg: rgb(70, 70, 70, 0.8);
 }
 
 * {
@@ -24,7 +25,7 @@ body {
   z-index: -2;
   height: 100%;
   width: 100%;
-  background-image: url("./images/day6.jpg");
+  background-image: url("./images/night3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,13 +54,14 @@ body {
 .weather-container {
   position: absolute;
   top: 5%;
-  right: 5%;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
+  right: 0;
+  padding: 5px;
+  margin: 5px;
+  width: 150px;
 }
 .zip-input {
   display: inline;
+  /* display: none; */
   width: 66px;
 }
 
@@ -74,9 +76,7 @@ body {
   font-size: 1.5em;
 }
 .clock {
-  font-size: 5em;
-  margin: 5px;
-  padding: 5px;
+  font-size: 6em;
   font-weight: bolder;
 }
 
@@ -85,8 +85,8 @@ body {
   bottom: 20px;
   right: 0;
   border-radius: 6px;
-  box-shadow: -1px 1px var(--wh);
-  background-color: var(--gry);
+  box-shadow: 1px 1px var(--wh);
+  background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
   overflow: hidden;
@@ -99,8 +99,8 @@ body {
   bottom: 20px;
   left: 0;
   border-radius: 6px;
-  box-shadow: 1px 1px var(--wh);
-  background-color: var(--gry);
+  box-shadow: -1px 1px var(--wh);
+  background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
   overflow: hidden;
@@ -115,6 +115,7 @@ body {
   margin: 0;
   font-weight: bolder;
   font-size: 1.5em;
+  z-index: 1;
 }
 .expand-btn {
   height: 25px;
@@ -129,12 +130,14 @@ body {
   text-align: center;
   padding: 5px;
   height: 60px;
+  z-index: 1;
 }
 .checkbox {
   padding: 5px;
   margin: 5px;
   width: 40px;
   height: 40px;
+  z-index: 1;
 }
   .checkbox:hover {
     cursor: pointer;
@@ -142,6 +145,7 @@ body {
 .delete-btn {
   padding: 5px;
   margin: 0px 10px;
+  z-index: 1;
 }
   .delete-btn:hover {
     cursor: pointer;
