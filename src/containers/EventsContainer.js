@@ -7,9 +7,10 @@ class EventsContainer extends React.Component {
         return(
             <div className="events">
                 <div className="container-title">
-                    Up Coming Events <button>+</button>
+                    Up Coming Events <button className="expand-btn">+</button>
                 </div>
-                <div className="container">
+                <hr></hr>
+                <div>
                     <Events events={this.props.user && this.props.user.events} />
                 </div>
                 <div className="event-form">

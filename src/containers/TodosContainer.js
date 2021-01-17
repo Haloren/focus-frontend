@@ -8,9 +8,10 @@ class TodosContainer extends React.Component {
         return(
             <div className="todos">
                 <div className="container-title">
-                    Todo List <button>+</button>
+                    Todo List <button className="expand-btn">+</button>
                 </div>
-                <div className="container">
+                <hr></hr>
+                <div>
                     <Todos todos={this.props.user && this.props.user.todos} />
                 </div>
                 <div className="todos-form">

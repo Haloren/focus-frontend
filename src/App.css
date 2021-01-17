@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* COLOR PALETTE */
 :root {
-    --wh: #ebebeb;
-    --blk: #030b38;
+    --wh: rgb(235, 235, 235);
+    --blk: rgb(3, 11, 56);
     --gry: rgb(70, 70, 70);
 }
 
@@ -38,7 +38,6 @@ body {
   margin: 0 5%;
   padding: 5px;
 }
-
 .login-btn {
   position: absolute;
   top: 5%;
@@ -57,9 +56,10 @@ body {
   right: 5%;
   padding: 10px;
   margin: 10px;
-  width: 166px;
+  width: 200px;
 }
 .zip-input {
+  display: inline;
   width: 66px;
 }
 
@@ -82,14 +82,30 @@ body {
 
 .todos {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   right: 0;
+  border-radius: 6px;
+  box-shadow: -1px 1px var(--wh);
+  background-color: var(--gry);
+  padding: 0 20px;
+  margin: 20px;
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
 }
 
 .events {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   left: 0;
+  border-radius: 6px;
+  box-shadow: 1px 1px var(--wh);
+  background-color: var(--gry);
+  padding: 0 20px;
+  margin: 20px;
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
 }
 
 .container-title {
@@ -100,15 +116,11 @@ body {
   font-weight: bolder;
   font-size: 1.5em;
 }
-.container {
-  border-radius: 6px;
-  background-color: var(--gry);
-  padding: 20px;
-  margin: 20px;
-  margin-top: 0;
-  overflow: hidden;
-  height: 250px;
+.expand-btn {
+  height: 25px;
+  width: 25px;
 }
+
 .list-items {
   display: grid;
   grid-template-columns: 20% 40% 20%;
@@ -116,15 +128,24 @@ body {
   list-style: none;
   text-align: center;
   padding: 5px;
+  height: 60px;
 }
 .checkbox {
   padding: 5px;
-  margin: 0px 10px;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
 }
+  .checkbox:hover {
+    cursor: pointer;
+  }
 .delete-btn {
   padding: 5px;
   margin: 0px 10px;
 }
+  .delete-btn:hover {
+    cursor: pointer;
+  }
 
 footer{
   position: absolute;
@@ -162,7 +183,7 @@ footer{
   }
   .todos {
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
