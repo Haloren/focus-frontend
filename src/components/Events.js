@@ -11,8 +11,9 @@ const Events = (props) => {
     return (
         <ul>
             {props.events && props.events.map(event =>
-                <li key={event.id} className="list-container">
-                    {event.title} - {event.date}
+                <li key={event.id} className="list-items">
+                    <h3> {event.date} </h3>
+                    <h3> {event.title} </h3>
                     <button className="delete-btn" onClick={() => handleOnDelete(event)}>X</button>
                 </li>
             )}

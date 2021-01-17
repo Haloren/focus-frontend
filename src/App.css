@@ -4,9 +4,10 @@
 :root {
     --wh: #ebebeb;
     --blk: #030b38;
+    --gry: rgb(70, 70, 70);
 }
 
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +16,7 @@
 
 body {
   color: aliceblue;
-  text-shadow: 1px 1px rgb(70, 70, 70);
+  text-shadow: 1px 1px var(--gry);
 }
 
 .background {
@@ -101,15 +102,19 @@ body {
 }
 .container {
   border-radius: 6px;
-  background-color: rgb(1, 0, 22);
+  background-color: var(--gry);
   padding: 20px;
   margin: 20px;
   margin-top: 0;
   overflow: hidden;
   height: 250px;
 }
-.list-container {
+.list-items {
+  display: grid;
+  grid-template-columns: 20% 40% 20%;
+  grid-gap: 1rem;
   list-style: none;
+  text-align: center;
   padding: 5px;
 }
 .checkbox {
@@ -137,12 +142,15 @@ footer{
   }
   .date-time-container {
     position: fixed;
-    top: 10%;
+    top: 15%;
     left: 25%;
     transform: translate(-50%, -50%);
   }
-
+  .date {
+    font-size: 0.8em;
+  }
   .clock {
+    padding: 0;
     font-size: 2em;
   }
 

@@ -12,7 +12,7 @@ const Todos = (props) => {
     return (
         <ul>
             {props.todos && props.todos.map(todo =>
-                <li key={todo.id} className="list-container">
+                <li key={todo.id} className="list-items">
                     <input type="checkbox" className="checkbox"></input>
                     {todo.item}
                     <button className="delete-btn" onClick={() => handleOnDelete(todo)}>X</button>
