@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Weather = (props) => {
-    // console.log("Weather", props.weather)
-
+    // console.log("Weather", props.weather.zip) 
     return (
         <>  
             <h5> Zip: {props.weather && props.weather.zip} </h5>

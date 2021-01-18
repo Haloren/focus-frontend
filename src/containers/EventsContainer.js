@@ -7,7 +7,8 @@ class EventsContainer extends React.Component {
         return(
             <div className="events">
                 <div className="container-title">
-                    Up Coming Events <button className="expand-btn">+</button>
+                    Up Coming Events 
+                    {/* <button className="expand-btn">+</button> */}
                 </div>
                 <hr></hr>
                 <div>

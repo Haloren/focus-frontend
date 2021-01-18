@@ -8,7 +8,8 @@ class TodosContainer extends React.Component {
         return(
             <div className="todos">
                 <div className="container-title">
-                    Todo List <button className="expand-btn">+</button>
+                    Todo List 
+                    {/* <button className="expand-btn">+</button> */}
                 </div>
                 <hr></hr>
                 <div>
