@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* COLOR PALETTE */
 :root {
-    --bg: rgb(70, 70, 70, 0.8);
+    --bg: rgb(70, 70, 70, 0.66);
     --wh: rgb(235, 235, 235);
     --blk: rgb(3, 11, 56);
     --gry: rgb(70, 70, 70);
@@ -87,7 +87,7 @@ body {
   bottom: 20px;
   right: 0;
   border-radius: 6px;
-  box-shadow: 1px 1px var(--wh);
+  /* box-shadow: 1px 1px var(--wh); */
   background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
@@ -107,7 +107,7 @@ body {
   bottom: 20px;
   left: 0;
   border-radius: 6px;
-  box-shadow: -1px 1px var(--wh);
+  /* box-shadow: -1px 1px var(--wh); */
   background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
@@ -207,6 +207,6 @@ footer{
     transform: translate(-50%, -50%);
   }
   .add-todo {
-    
+
   }
 }
