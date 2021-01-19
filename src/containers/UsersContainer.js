@@ -8,6 +8,7 @@ import Users from '../components/Users';
 import UserForm from '../components/UserForm';
 import WeatherContainer from '../containers/WeatherContainer';
 import DateTime from '../components/DateTime';
+import Help from '../components/Help';
 
 class UsersContainer extends React.Component {
 
@@ -24,6 +25,7 @@ class UsersContainer extends React.Component {
                 <Route path='/users/:id' render={(routerProps) => <Users {...routerProps} users={this.props.users} />}></Route>
                 {/* <Users users={this.props.users}/> */}
 
+                <Route exact path='/help' component= { Help }></Route>
                 <Route exact path='/' component={ DateTime } component={ WeatherContainer }></Route>
             </Switch>
             </>

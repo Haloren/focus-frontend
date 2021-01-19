@@ -18,6 +18,10 @@ export function fetchWeather(userId, weatherId) {
         fetch(API + `/users/${userId}/weathers/${weatherId}`)
         .then(resp => resp.json())
         .then(data => console.log(data))
+        // .then(weather => dispatch({
+        //     type: 'FETCH_WEATHER',
+        //     payload: weather
+        // }))
     }
 }
 
