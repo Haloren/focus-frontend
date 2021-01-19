@@ -2,7 +2,6 @@ const API = "http://localhost:3001"
 
 // FETCH DATA FROM DATABASE
 export function fetchUsers() {
-
     return (dispatch) => {
         fetch(API + '/users')
         .then(resp => resp.json())
@@ -11,6 +10,14 @@ export function fetchUsers() {
             type: 'FETCH_USERS',
             payload: users
         }))
+    }
+}
+export function fetchWeather(userId, weatherId) {
+    debugger;
+    return (dispatch) => {
+        fetch(API + `/users/${userId}/weathers/${weatherId}`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
     }
 }
 
