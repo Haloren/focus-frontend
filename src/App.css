@@ -91,15 +91,9 @@ body {
   background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
-  overflow: hidden;
+  overflow: auto;
   height: 300px;
   width: 400px;
-}
-.add-todo {
-  position: fixed;
-  top: 60%;
-  right: 50px;
-  text-align: center;
 }
 
 .events {
@@ -111,15 +105,21 @@ body {
   background-color: var(--bg);
   padding: 0 20px;
   margin: 20px;
-  overflow: hidden;
+  overflow: auto;
   height: 300px;
   width: 400px;
 }
-.add-event {
-  position: fixed;
-  top: 60%;
-  left: 50px;
+
+.add-input {
+  position: absolute;
+  z-index: 5;
+  height: auto;
+  width: auto;
   text-align: center;
+  border-radius: 10px;
+  background-color: var(--gry);
+  margin: 10px;
+  padding: 10px;
 }
 
 .container-title {
@@ -201,15 +201,12 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .add-event {
-
+  .add-input {
+    
   }
   .todos {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .add-todo {
-
   }
 }

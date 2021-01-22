@@ -22,7 +22,7 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <div className="add-todo">
+            <div className="add-input">
                 <form className="input-container" onSubmit={this.handleOnSubmit}>
                     <input type="text" name="item" value={this.state.item} onChange={this.handleOnChange} placeholder="Add a Todo" required ></input>
                     <input type="submit" value="+"></input>
