@@ -82,6 +82,16 @@ body {
   font-weight: bolder;
 }
 
+.todos-title {
+  position: absolute;
+  bottom: 340px;
+  right: 300px;
+  padding: 0;
+  margin: 0 20px;
+  font-weight: bolder;
+  font-size: 1.5em;
+  z-index: 1;
+}
 .todos {
   position: absolute;
   bottom: 20px;
@@ -96,6 +106,16 @@ body {
   width: 400px;
 }
 
+.events-title {
+  position: absolute;
+  bottom: 340px;
+  left: 0;
+  padding: 0;
+  margin: 0 20px;
+  font-weight: bolder;
+  font-size: 1.5em;
+  z-index: 1;
+}
 .events {
   position: absolute;
   bottom: 20px;
@@ -110,6 +130,11 @@ body {
   width: 400px;
 }
 
+.expand-btn {
+  height: 25px;
+  width: 25px;
+}
+
 .add-input {
   position: absolute;
   z-index: 5;
@@ -120,20 +145,6 @@ body {
   background-color: var(--gry);
   margin: 10px;
   padding: 10px;
-}
-
-.container-title {
-  position: relative;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-weight: bolder;
-  font-size: 1.5em;
-  z-index: 1;
-}
-.expand-btn {
-  height: 25px;
-  width: 25px;
 }
 
 .list-items {
@@ -196,6 +207,9 @@ footer {
     font-size: 2em;
   }
 
+  .events-title, .todos-title {
+    display: none;
+  }
   .events {
     top: 80%;
     left: 50%;
