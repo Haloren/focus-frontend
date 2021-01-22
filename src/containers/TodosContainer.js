@@ -1,5 +1,4 @@
 import React from 'react';
-
 import TodoForm from '../components/TodoForm';
 import Todos from '../components/Todos';
 
@@ -11,13 +10,11 @@ class TodosContainer extends React.Component {
                     Todo List 
                     {/* <button className="expand-btn">+</button> */}
                 </div>
-                <div className="todos">
-                    <div>
-                        <Todos todos={this.props.user && this.props.user.todos} />
-                    </div>
-                    <div className="todos-form">
+                <div className="todos-form">
                         <TodoForm user={this.props.user} />
-                    </div>
+                </div>
+                <div className="todos">
+                    <Todos todos={this.props.user && this.props.user.todos} />
                 </div>
             </>
         )

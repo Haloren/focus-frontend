@@ -68,6 +68,7 @@ body {
 }
 
 .date-time-container {
+  z-index: -1;
   position: fixed;
   top: 40%;
   left: 50%;
@@ -182,8 +183,32 @@ footer {
   right: 0;
   margin: 10px;
 }
+
 .help {
   left: 0;
+}
+.back-btn {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.help-title {
+  position: fixed;
+  top: 15%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+.help-container {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  text-align: center;
+  width: 80%;
+  /* height: 80%; */
+  border-radius: 10px;
+  background-color: var(--gry);
+  padding: 40px 80px;
 }
 
 @media (max-width: 650px)
@@ -205,6 +230,12 @@ footer {
   .clock {
     padding: 0;
     font-size: 2em;
+  }
+
+  .back-btn {
+    position: fixed;
+    top: 50px;
+    padding: 10px;
   }
 
   .events-title, .todos-title {

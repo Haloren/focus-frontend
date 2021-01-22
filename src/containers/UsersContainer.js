@@ -1,7 +1,7 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { fetchUsers } from '../redux/actionCreators';
 
 import Users from '../components/Users';

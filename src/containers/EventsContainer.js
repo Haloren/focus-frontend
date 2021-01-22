@@ -10,13 +10,11 @@ class EventsContainer extends React.Component {
                     Up Coming Events 
                     {/* <button className="expand-btn">+</button> */}
                 </div>
-                <div className="events">
-                    <div>
-                        <Events events={this.props.user && this.props.user.events} />
-                    </div>
-                    <div className="event-form">
+                <div className="event-form">
                         <EventForm user={this.props.user}/>
-                    </div>
+                </div>
+                <div className="events">
+                    <Events events={this.props.user && this.props.user.events} />
                 </div>
             </>
         )
