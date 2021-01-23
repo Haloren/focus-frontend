@@ -6,14 +6,13 @@ import { fetchUsers } from '../redux/actionCreators';
 
 import Users from '../components/Users';
 import UserForm from '../components/UserForm';
-import WeatherContainer from '../containers/WeatherContainer';
 import DateTime from '../components/DateTime';
 import Help from '../components/Help';
 
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        // console.log(this.props) 
+        // console.log("Users Container", this.props) 
         this.props.fetchUsers()
     }
 
@@ -26,7 +25,7 @@ class UsersContainer extends React.Component {
                 {/* <Users users={this.props.users}/> */}
 
                 <Route exact path='/help' component= { Help }></Route>
-                <Route exact path='/' component={ DateTime } component={ WeatherContainer }></Route>
+                <Route exact path='/' component={ DateTime }></Route>
             </Switch>
             </>
         )

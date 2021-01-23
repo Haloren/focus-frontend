@@ -13,7 +13,7 @@ export function fetchUsers() {
     }
 }
 export function fetchWeather(userId, weatherId) {
-    debugger;
+    // debugger;
     return (dispatch) => {
         fetch(API + `/users/${userId}/weathers/${weatherId}`)
         .then(resp => resp.json())
