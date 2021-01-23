@@ -17,7 +17,7 @@ const Users = (props) => {
             <h2 className="hello-user">{user ? ("Hello " + user.name) : <Link to={'/new'} className="login-btn">Please Login</Link>}</h2>
             <TodosContainer user={user} />
             <EventsContainer user={user}/>
-            <WeatherContainer user={user}/>
+            {/* <WeatherContainer user={user}/> */}
         </>
     )
 }

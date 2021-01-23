@@ -13,9 +13,10 @@ class WeatherContainer extends React.Component {
         // console.log("User Id", this.props.user.id)
         // console.log("Weather Id", this.props.user.weather.id)
 
-        let userId = (this.props.user.id)
-        let weatherId = (this.props.user.weather.id)
-        this.props.fetchWeather(userId, weatherId)
+        // let userId = (this.props.user.id)
+        // let weatherId = (this.props.user.weather.id)
+        // this.props.fetchWeather(userId, weatherId)
+        this.props.fetchWeather(1, 1)
 
         // fetch(`http://localhost:3001/users/${userId}/weathers/${weatherId}`)
         // .then(resp => resp.json())
