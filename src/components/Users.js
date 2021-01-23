@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 import EventsContainer from '../containers/EventsContainer';
 import TodosContainer from '../containers/TodosContainer';
-import WeatherContainer from '../containers/WeatherContainer';
+// import WeatherContainer from '../containers/WeatherContainer';
 
 
 const Users = (props) => {
 
     // console.log(props.users)
-    
-    let user = props.users.filter(user => user.id == props.match.params.id)[0]
+    // eslint-disable-next-line
+    let user = props.users.filter(user => user.id == props.match.params.id)[0] 
 
     return (
         <>
