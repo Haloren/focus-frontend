@@ -8,9 +8,6 @@ const reducers = (state=initialUserState, action) => {
         case 'FETCH_USERS':
             return {users: action.payload}
 
-        // case 'FETCH_WEATHER':
-        //     return {}
-
         case 'ADD_USER':
             return {...state, users: [...state.users, action.payload]}
 
